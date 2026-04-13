@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Fundo roxo escuro -->
+  <rect width="32" height="32" rx="6" fill="#2d0a43"/>
+  <!-- Whisk centralizado (escala do original 44x72 → cabe em 13x22, centrado) -->
+  <g transform="translate(9.5, 5) scale(0.305)" fill="none" stroke="#fbd658" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Cabo -->
+    <rect x="18" y="46" width="8" height="24" rx="4" fill="#fbd658" stroke="none"/>
+    <!-- Corpo oval -->
+    <ellipse cx="22" cy="28" rx="16" ry="20" stroke-width="5.5"/>
+    <!-- Fios internos -->
+    <path d="M12 10 Q17 28 12 46" stroke-width="4"/>
+    <path d="M22 7 Q22 28 22 48" stroke-width="4"/>
+    <path d="M32 10 Q27 28 32 46" stroke-width="4"/>
+  </g>
+</svg>
