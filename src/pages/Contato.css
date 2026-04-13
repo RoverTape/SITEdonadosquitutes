@@ -1,0 +1,187 @@
+/* ── Hero ── */
+.contato-hero {
+  background-color: var(--yellow);
+  padding: 80px 40px 72px;
+}
+
+.contato-hero-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.contato-eyebrow {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--dark);
+  opacity: 0.5;
+  margin-bottom: 14px;
+}
+
+.contato-titulo {
+  font-family: var(--font-heading);
+  font-size: clamp(52px, 9vw, 96px);
+  font-weight: 900;
+  color: var(--dark);
+  line-height: 0.95;
+  margin-bottom: 20px;
+}
+
+.contato-hero-sub {
+  font-family: var(--font-body);
+  font-size: 17px;
+  color: var(--dark);
+  opacity: 0.65;
+  max-width: 480px;
+  line-height: 1.65;
+}
+
+/* ── Body ── */
+.contato-body {
+  background-color: var(--cream);
+  padding: 80px 40px 100px;
+}
+
+/* Info cards grid */
+.contato-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1160px;
+  margin: 0 auto 64px;
+}
+
+.info-card {
+  background-color: var(--dark);
+  border-radius: 20px;
+  padding: 32px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-icon {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.info-label {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin-bottom: 6px;
+}
+
+.info-card p {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--cream);
+  opacity: 0.7;
+  line-height: 1.7;
+}
+
+.info-hora {
+  color: var(--orange) !important;
+  opacity: 1 !important;
+  font-weight: 700;
+}
+
+/* Social links */
+.info-social {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.info-social a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--cream);
+  opacity: 0.7;
+  text-decoration: none;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.info-social a:hover {
+  opacity: 1;
+  color: var(--yellow);
+}
+
+/* CTA iFood */
+.contato-cta {
+  max-width: 1160px;
+  margin: 0 auto;
+  background-color: var(--dark);
+  border-radius: 20px;
+  padding: 40px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.contato-cta p {
+  font-family: var(--font-heading);
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 800;
+  color: var(--cream);
+}
+
+.btn-ifood-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--purple);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 16px;
+  padding: 16px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+.btn-ifood-cta:hover {
+  background-color: var(--yellow);
+  color: var(--dark);
+  transform: translateY(-2px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .contato-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .contato-hero { padding: 56px 24px 52px; }
+  .contato-body { padding: 56px 24px 72px; }
+
+  .contato-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-cta {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 28px;
+  }
+
+  .btn-ifood-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,217 @@
+/* ── Hero ── */
+.cardapio-hero {
+  background-color: var(--dark);
+  padding: 80px 32px 72px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardapio-hero::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.cardapio-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: var(--purple);
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.cardapio-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.cardapio-hero-badge {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--yellow);
+  opacity: 0.75;
+  margin-bottom: 16px;
+}
+
+.cardapio-hero-titulo {
+  font-family: var(--font-display);
+  font-size: clamp(72px, 10vw, 120px);
+  color: var(--yellow);
+  -webkit-text-stroke: 2px var(--purple);
+  paint-order: stroke fill;
+  line-height: 0.95;
+  margin-bottom: 20px;
+}
+
+.cardapio-hero-sub {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--cream);
+  opacity: 0.6;
+  max-width: 480px;
+  line-height: 1.65;
+}
+
+/* ── Body ── */
+.cardapio-body {
+  background-color: var(--cream);
+  padding: 72px 32px 96px;
+}
+
+.cardapio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Section ── */
+.menu-section {
+  margin-bottom: 56px;
+}
+
+.menu-section--destaque {
+  background-color: var(--dark);
+  border-radius: 16px;
+  padding: 28px 24px;
+  margin-bottom: 56px;
+}
+
+.menu-section--destaque .menu-section-titulo {
+  color: var(--yellow);
+}
+
+.menu-section--destaque .menu-section-bar {
+  background-color: var(--orange);
+}
+
+.menu-section--destaque .menu-item-nome {
+  color: var(--cream);
+}
+
+.menu-section--destaque .menu-item-preco {
+  color: var(--yellow);
+}
+
+.menu-section--destaque .menu-item-desc {
+  color: var(--cream);
+  opacity: 0.55;
+}
+
+.menu-section--destaque .menu-item-divider {
+  background-color: rgba(251, 214, 88, 0.1);
+}
+
+.menu-section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.menu-section-icone {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.menu-section-titulo {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--dark);
+  letter-spacing: 1px;
+}
+
+.menu-section-bar {
+  height: 3px;
+  background: linear-gradient(90deg, var(--purple), var(--orange));
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+/* ── Items ── */
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.menu-item {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(45, 10, 67, 0.08);
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.menu-item-nome {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.3;
+}
+
+.menu-item-preco {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--purple);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.menu-item-desc {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--dark);
+  opacity: 0.55;
+  line-height: 1.55;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .cardapio-hero {
+    padding: 56px 20px 52px;
+  }
+
+  .cardapio-body {
+    padding: 48px 20px 64px;
+  }
+
+  .cardapio-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

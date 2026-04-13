@@ -1,0 +1,140 @@
+.footer {
+  background-color: var(--dark);
+  color: var(--cream);
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 64px 40px 48px;
+}
+
+/* Brand */
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.footer-logo-top {
+  font-family: var(--font-body);
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: var(--yellow);
+  opacity: 0.6;
+  margin-bottom: 2px;
+}
+
+.footer-logo-main {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 900;
+  font-size: 34px;
+  color: var(--yellow);
+}
+
+.footer-tagline {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--cream);
+  opacity: 0.45;
+  line-height: 1.6;
+}
+
+/* Nav columns */
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-nav-title {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin-bottom: 8px;
+}
+
+.footer-nav a,
+.footer-nav span {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--cream);
+  opacity: 0.6;
+  text-decoration: none;
+  transition: opacity 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.footer-nav a:hover {
+  opacity: 1;
+  color: var(--yellow);
+}
+
+/* Bottom bar */
+.footer-bottom {
+  border-top: 1px solid rgba(251, 214, 88, 0.12);
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--cream);
+  opacity: 0.35;
+}
+
+.footer-zeoxy {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--cream);
+  opacity: 0.4;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.footer-zeoxy:hover {
+  opacity: 0.85;
+  color: var(--yellow);
+}
+
+.footer-zeoxy strong {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 48px 24px 36px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom {
+    padding: 16px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+}
