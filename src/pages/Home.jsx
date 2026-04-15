@@ -189,7 +189,7 @@ export default function Home() {
       <section className="sobre" ref={sobreRef}>
         <div className="sobre-inner">
           <div className={`sobre-visual anim-left ${sobreInView ? 'visible' : ''}`} aria-hidden="true">
-            <div className="sobre-blob"><span>🍰</span></div>
+            <div className="sobre-blob"><img src="/images/perfil2.png" alt="Confeiteira" className="sobre-img" /></div>
           </div>
           <div className={`sobre-text anim-right ${sobreInView ? 'visible' : ''}`}>
             <p className="section-eyebrow" style={{ color: 'var(--yellow)', opacity: 0.75 }}>— Nossa história —</p>

@@ -40,7 +40,7 @@
 }
 @keyframes heroFloat {
   0%, 100% { transform: scale(1) translateY(0); }
-  50%       { transform: scale(1.015) translateY(-8px); }
+  50% { transform: scale(1.015) translateY(-1px); }
 }
 @keyframes cookiePulse {
   0%, 100% { transform: scale(1) translateY(0); }
@@ -425,6 +425,7 @@
 .sobre {
   background-color: var(--dark);
   padding: 96px 40px;
+  overflow: hidden;
 }
 .sobre-inner {
   display: grid;
@@ -436,12 +437,16 @@
 }
 .sobre-visual { display: flex; justify-content: center; }
 .sobre-blob {
-  width: 340px; height: 340px;
+  width: 380px;
+  height: 380px;
   border-radius: 55% 45% 50% 50% / 45% 55% 45% 55%;
   background-color: var(--yellow);
-  display: flex; align-items: center; justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 84px;
   filter: drop-shadow(0 8px 28px rgba(0,0,0,0.28));
+  transform: translateY(-20px); /* 👈 sobe ela */
   animation: heroFloat 8s ease-in-out infinite;
 }
 .sobre-titulo {
