@@ -127,7 +127,7 @@ export default function Home() {
 
         <div className="hero-img-wrap hero-anim-right">
           {!heroErr
-            ? <img src="/images/cokkie.jpg" alt="Cookie recheado artesanal" className="hero-img" onError={() => setHeroErr(true)} />
+            ? <img src="/images/Tortafundo.png" alt="Torta artesanal" className="hero-img" onError={() => setHeroErr(true)} />
             : <div className="hero-img-fallback">🍪</div>}
         </div>
       </section>
