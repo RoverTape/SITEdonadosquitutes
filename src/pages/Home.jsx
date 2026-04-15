@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import { useInView } from '../hooks/useInView'
 import InstagramFeed from '../components/InstagramFeed'
 import './Home.css'
+import icone1 from '../assets/icone1.png'
+import icone2 from '../assets/icone2.png'
+import icone3 from '../assets/icone3.png'
 
 const IFOOD = 'https://www.ifood.com.br/delivery/paulinia-sp/a-dona-dos-quitutes---confeitaria-artesanal-jardim-america/84ab3b0f-1d9c-4676-9cd5-b750085f2a4c'
 
@@ -71,17 +74,17 @@ function CookieIcon() {
 
 const cards = [
   {
-    icon: <PhoneIcon />,
+    icon: <img src={icone1} className="icon" />,
     titulo: 'Faça seu pedido online',
     desc: 'Peça seus quitutes favoritos de forma rápida e prática, sem sair de casa.',
   },
   {
-    icon: <ScooterIcon />,
+    icon: <img src={icone2} className="icon" />,
     titulo: 'Receba no conforto do seu lar',
     desc: 'Realizamos entregas rápidas e seguras para que você possa desfrutar dos nossos quitutes no conforto da sua casa.',
   },
   {
-    icon: <CookieIcon />,
+    icon: <img src={icone3} className="icon" />,
     titulo: 'Saboreie cada momento',
     desc: 'Aproveite nossos quitutes fresquinhos, feitos com carinho, para tornar seu dia ainda mais especial.',
   },
